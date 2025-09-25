@@ -1,39 +1,55 @@
 import { NavLink } from 'react-router-dom'
-import logo from '../assets/logo.svg'
+import logo from '../assets/logo.png'
 
 export default function Navbar() {
   const linkStyle = ({ isActive }) => ({
     textDecoration: 'none',
     padding: '8px 12px',
-    borderRadius: '8px',
+    borderRadius: 6,
     fontWeight: 500,
-    backgroundColor: isActive ? '#f0f0f0' : 'transparent'
+    color: isActive ? '#1e3a8a' : '#0f172a',
+    backgroundColor: isActive ? '#e0e7ff' : 'transparent',
+    transition: 'all 0.2s ease'
   })
 
   return (
-    <header style={{
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'space-between',
-      padding: '12px 16px',
-      borderBottom: '1px solid #eee',
-      position: 'sticky',
-      top: 0,
-      background: '#fff',
-      zIndex: 10
-    }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-        <img src={logo} alt="BN logo" width="36" height="36" />
-        <span style={{ fontSize: 18 }}>Benjamin Nguyen</span>
-      </div>
+    <header
+      style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: '100%',
+        background: '#ffffff',
+        boxShadow: '0 2px 6px rgba(0,0,0,0.08)',
+        zIndex: 1000,
+        paddingTop: 12,
+        paddingBottom: 12,
+        paddingLeft: 24,
+        paddingRight: 'max(24px, calc(env(safe-area-inset-right) + 32px))',
+        boxSizing: 'border-box'
+      }}
+    >
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          gap: 16
+        }}
+      >
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+          <img src={logo} alt="BN Logo" width="40" height="40" />
+          <span style={{ fontWeight: 600, fontSize: 18 }}>Benjamin Nguyen</span>
+        </div>
 
-      <nav style={{ display: 'flex', gap: 8 }}>
-        <NavLink to="/" style={linkStyle} end>Home</NavLink>
-        <NavLink to="/about" style={linkStyle}>About</NavLink>
-        <NavLink to="/projects" style={linkStyle}>Projects</NavLink>
-        <NavLink to="/services" style={linkStyle}>Services</NavLink>
-        <NavLink to="/contact" style={linkStyle}>Contact</NavLink>
-      </nav>
+        <nav style={{ display: 'flex', gap: 12 }}>
+          <NavLink to="/" style={linkStyle} end>Home</NavLink>
+          <NavLink to="/about" style={linkStyle}>About Me</NavLink>
+          <NavLink to="/projects" style={linkStyle}>Projects</NavLink>
+          <NavLink to="/services" style={linkStyle}>Services</NavLink>
+          <NavLink to="/contact" style={linkStyle}>Contact Me</NavLink>
+        </nav>
+      </div>
     </header>
   )
 }
