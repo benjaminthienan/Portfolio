@@ -1,3 +1,11 @@
+/*
+  File: Contact.jsx
+  Student: Benjamin Nguyen
+  StudentID: 301468048
+  Date: Sept 26, 2025
+  Description: Contact page – includes contact info and a form for basic user input.
+*/
+
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 

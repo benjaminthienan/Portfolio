@@ -1,3 +1,11 @@
+/*
+  File: Services.jsx
+  Student: Benjamin Nguyen
+  StudentID: 301468048
+  Date: Sept 26, 2025
+  Description: Services page – showcases areas of skill development with images and descriptions.
+*/
+
 import codeImg from "../assets/code.png"
 import webImg from "../assets/web.jpg"
 import databaseImg from "../assets/database.webp"

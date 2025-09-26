@@ -1,3 +1,11 @@
+/*
+  File: Home.jsx
+  Student: Benjamin Nguyen
+  StudentID: 301468048
+  Date: Sept 26, 2025
+  Description: Home page – includes welcome message, mission statement, and links to key sections.
+*/
+
 import { Link } from 'react-router-dom'
 
 export default function Home() {

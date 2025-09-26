@@ -1,3 +1,11 @@
+/*
+  File: Projects.jsx
+  Student: Benjamin Nguyen
+  StudentID: 301468048
+  Date: Sept 26, 2025
+  Description: Projects page – highlights 3 projects with images, roles, and outcomes.
+*/
+
 import portfolioImg from '../assets/portfolio.jpeg'
 import todoImg from '../assets/todo.avif'
 import weatherImg from '../assets/weather.webp'

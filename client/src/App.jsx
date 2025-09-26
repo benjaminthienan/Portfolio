@@ -1,3 +1,11 @@
+/*
+  File: App.jsx
+  Student: Benjamin Nguyen
+  StudentID: 301468048
+  Date: Sept 26, 2025
+  Description: Root app component – sets up routing and renders the navbar + pages.
+*/
+
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/NavBar'          
 import Home from './components/Home'

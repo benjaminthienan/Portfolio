@@ -1,3 +1,11 @@
+/*
+  File: Navbar.jsx
+  Student: Benjamin Nguyen
+  StudentID: 301468048
+  Date: Sept 26, 2025
+  Description: Navigation bar – contains logo and links to all site pages.
+*/
+
 import { NavLink } from 'react-router-dom'
 import logo from '../assets/logo.png'
 

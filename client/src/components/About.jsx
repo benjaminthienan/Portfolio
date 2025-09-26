@@ -1,3 +1,11 @@
+/*
+  File: About.jsx
+  Student: Benjamin Nguyen
+  StudentID: 301468048
+  Date: Sept 26, 2025
+  Description: About Me page – includes headshot, name, short bio, and resume link.
+*/
+
 import headshot from '../assets/headshot.jpeg'   
 import resume from '../assets/resume.pdf' 
 
